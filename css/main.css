@@ -1,0 +1,206 @@
+body {
+    background: #f0f0f0;
+    text-align: center;
+}
+
+section {
+    width: 100%;
+    overflow: hidden;
+}
+
+.row {
+    padding: 1em 2em;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+    .row[class*="sponsor"] {
+        margin-bottom: 3em;
+    }
+
+.row-centered {
+    text-align: center;
+}
+
+.col-centered {
+    display: inline-block;
+    float: none;
+    margin-right: -4px;
+    padding: 0 3em;
+}
+
+h1 {
+    font-size: 4em;
+    margin: 0.5em;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+@media all and (max-width:768px) {
+    h1 {
+        font-size: 2.5em;
+        margin: 0.2em;
+    }
+
+    h2 {
+        font-size: 1.25em;
+    }
+}
+
+small {
+    font-size: 0.4em;
+}
+
+strong {
+    color: black;
+}
+
+
+.section-title {
+    /* Fake a dark overlay with a gradient. Black is black... I want my sanity back... */
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/background.jpg');
+    background-size: cover;
+    min-height: 100vh;
+    color: white;
+}
+
+    .section-title p {
+        font-size: 3em;
+    }
+
+    .section-title .btn {
+        color: #d42b2e !important;
+        font-size: 2em;
+        padding: 0.75em;
+    }
+
+        .section-title .btn:hover {
+            color: #fff !important;
+            border-color: #d4712b;
+            background-color: #d4712b;
+        }
+
+
+.section-info {
+    background: #d4712b;
+    color: #fff;
+    font-size: 1.25em;
+}
+
+    .section-info a {
+        color: #fff;
+        text-decoration: underline;
+    }
+
+        .section-info a:active,
+        .section-info a:focus,
+        .section-info a:hover {
+            color: #000;
+        }
+
+
+.section-footer {
+    margin-top: 5em;
+}
+
+
+.logo {
+    max-width: 80%;
+    margin: 10em auto 0 auto;
+}
+
+
+@media all and (max-width:768px) {
+    .logo {
+        max-width: 95%;
+        margin: 10em auto 0 auto;
+    }
+}
+
+
+.sponsor img {
+    height: 42vh;
+}
+
+
+.text-container {
+    padding: 2em;
+}
+
+
+.maps-container {
+    height: 20em;
+    padding: 0;
+}
+
+    .maps-container div {
+        height: 100%;
+    }
+
+
+.staff-container {
+    display: inline-block;
+    margin: 0 0 2em 0;
+}
+
+.staff-link .staff-info {
+    opacity: 0.8;
+}
+
+.staff-link:hover .staff-info {
+    opacity: 1;
+    color: white;
+}
+
+.staff-link:focus .staff-info,
+.staff-link:active .staff-info {
+    color: white;
+}
+
+.staff-pic {
+    width: 10em;
+    height: 10em;
+}
+
+.staff-info {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.staff-firstname {
+    font-weight: 600;
+}
+
+.staff-lastname {
+    opacity: 0.7;
+}
+
+
+.vertical-center {
+    vertical-align: middle;
+    float: none;
+    padding: 0;
+    margin: 0;
+}
+
+@media all and (min-width:768px) {
+    .vertical-center {
+        display: inline-block;
+    }
+}
+
+
+.no-padding {
+    padding: 0 !important;
+}
+
+.no-scroll {
+    height: 100%;
+    overflow: hidden;
+}

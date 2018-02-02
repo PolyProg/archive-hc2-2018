@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Switzerland's biggest programming contest">
+    <meta name="author" content="PolyProg">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="HC2">
+    <meta property="og:image" content="http://hc2.ch/images/preview.jpg">
+    <meta property="og:url" content="http://hc2.ch">
+    <meta property="og:description" content="Switzerland's biggest programming contest">
+
+    <title>HC2 2018</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <link rel="icon" type="image/png" href="images/favicon-16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="images/favicon-32.png" sizes="32x32">
+
+    <script>
+        // Basic protection against dumb bots
+        function msgto(mailID, mailDomain) {
+            var txt = mailID + "@" + mailDomain;
+            document.write("<a href=\"mailto:" + txt + "\">" + txt + "</a>");
+        };
+    </script>
+</head>
+<body>
+    <section class="section-title">
+        <img class="logo"
+             src="images/logo.png"
+             alt="HC2">
+        <h1>
+            March 17, 2018
+            <br>
+            EPFL, Lausanne
+        </h1>
+        <p>
+            <h2>
+                Registration opens soon!
+            </h2>
+        </p>
+        <p>
+            <h3>
+                Follow us on <a href="https://www.facebook.com/polyprog/"
+                                target="_blank"
+                                rel="noreferrer">Facebook</a>
+                for updates!
+            </h3>
+        </p>
+<!-- TODO something like that with all years (2017.hc2.ch has it already)        <p>
+            <h3>
+                Don't forget to check out the 2017 <a href="https://lauzhack2017.devpost.com"
+                                                      target="_blank"
+                                                      rel="noreferrer">projects</a>
+                and photos from <a href="https://www.flickr.com/photos/clic-epfl/sets/72157688594566001"
+                                   target="_blank"
+                                   rel="noreferrer">Saturday</a>
+                and <a href="https://www.flickr.com/photos/clic-epfl/sets/72157666472688549"
+                       target="_blank"
+                       rel="noreferrer">Sunday</a>.
+            </h3>
+        </p>
+        <p>
+            <h3>
+                Have a look to the 2016 edition's <a href="https://lauzhack.devpost.com/submissions"
+                                                      target="_blank"
+                                                      rel="noreferrer">projects</a>
+                and photos from <a href="https://www.flickr.com/photos/clic-epfl/albums/72157673003949813"
+                                   target="_blank"
+                                   rel="noreferrer">Saturday</a>
+                and <a href="https://www.flickr.com/photos/clic-epfl/albums/72157675427474611"
+                       target="_blank"
+                       rel="noreferrer">Sunday</a>.
+            </h3>
+        </p> -->
+    </section>
+    <section class="section-info">
+        <div class="row no-padding">
+            <div class="col-md-6 vertical-center">
+                <div class="text-container">
+                    <p>
+                        HC2 is Switzerland's biggest programming contest, held at EPFL in Lausanne.
+                    </p>
+                    <p>
+                        Solve challenging problems in teams of up to 3 people using short programs.
+                    </p>
+                    <p>
+                        Meet new friends, win prizes, and have fun for a day!
+                    </p>
+<!-- TODO some decent phrasing for a "here is our rules" link here ? -->
+                </div>
+            </div><!-- comment to avoid extra spaces with inline-block, thanks CSS...
+         --><div class="col-md-6 vertical-center">
+                <div class="maps-container">
+                    <div id="maps-canvas"></div>
+                    <script>
+                        window.onload = function () {
+                            var options = {
+                                zoom: 9,
+                                center: { lat: 46.520231, lng: 6.564728 },
+                                mapTypeId: google.maps.MapTypeId.ROADMAP,
+                                clickableIcons: false,
+                                disableDefaultUI: true
+                            };
+                            var map = new google.maps.Map(document.getElementById("maps-canvas"), options);
+                            new google.maps.Marker({
+                                map: map,
+                                position: options.center
+                            });
+                        };
+                    </script>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="schedule">
+        <h1>Schedule</h1>
+          <table class="table table-striped">
+            <tr>
+              <td>10:30 - 11:30</td>
+              <td>Check-in & Breakfast</td>
+            </tr>
+<!-- TODO haven't done much from here on... -->
+            <tr>
+              <td>9:30 - 10:00</td>
+              <td>Opening ceremony</td>
+            </tr>
+                        <tr>
+                            <td>10:00 - 10:20</td>
+                            <td>Team building</td>
+                        <tr>
+                            <td>10:20 - 12:00</td>
+                            <td>Tech Talks</td>
+                        </tr>
+                        <tr>
+                            <td>12:00</td>
+                            <td>Start Hacking</td>
+                        </tr>
+                        <tr>
+                            <td>12:30 - 13:30</td>
+                            <td>Lunch</td>
+                        </tr>
+                        <tr>
+                            <td>14:00 - 18:30</td>
+                            <td>Workshops</td>
+                        </tr>
+                        <tr>
+                            <td>18:00 - 19:00</td>
+                            <td>Dinner</td>
+                        </tr>
+                        <tr>
+                            <td>21:00 - 23:59</td>
+                            <td>Mini Events</td>
+                        </tr>
+                    </tbody>
+                </table>
+        </div>
+    </section>
+    <section>
+        <h1>F.A.Q.</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <h3>Can I participate?</h3>
+                <p>
+                    You must be <strong>at least 18 years old</strong> and <strong>a student</strong>, or have graduated from university in the past twelve months.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <h3>How much does it cost?</h3>
+                <p>
+                    Thanks to our sponsors, <strong>attendance is completely free</strong>.
+                    We will provide you with WiFi, <strong>meals</strong>, swag, and a workspace.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <h3>What should I bring?</h3>
+                <p>
+                    Your laptop, charger and anything else you'd like.
+                    <br>
+                    Please bring <strong>a valid ID</strong> for admission.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <h3>Where is it?</h3>
+                <p>
+                    LauzHack will take place in EPFL's Lausanne campus. It's located in the southwestern part of Switzerland, bordering Lake Geneva.
+                    You can find directions <a href="http://information.epfl.ch/access"
+                                               rel="noreferrer"
+                                               target="_blank">here</a>.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <h3>Where will I sleep?</h3>
+                <p>
+                    We have a sleeping area with mattresses, and showers.
+                    <br>
+                    Please bring your sleeping bag, towel, and toiletries.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <h3>Will my travel be reimbursed?</h3>
+                <p>
+                    You are eligible for CHF 60 if coming from Switzerland, CHF 120 from Europe, and CHF 200 from the rest of the world.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <h3 id="faq-ip">What about intellectual property?</h3>
+                <p>
+                    We do not claim any rights on any of your intellectual property whatsoever. Everything you create, at LauzHack or not, belongs to you.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <h3>What if I don't have a team?</h3>
+                <p>
+                    Don't worry! Part of the fun of a hackathon is meeting new people.
+                    We will have time at the beginning of the event to socialize and form teams.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <h3>I have another question...</h3>
+                <p>
+                    Message us on <a href="https://facebook.com/lauzhack"
+                                     target="_blank"
+                                     rel="noreferrer">Facebook</a>,
+                    <br>
+                    Tweet to us <a href="http://twitter.com/lauzhack"
+                                   target="_blank"
+                                   rel="noreferrer">@lauzhack</a>,
+                    <br>
+                    or email us at at
+                    <script>msgto("info", "lauzhack.com")</script>!
+                </p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h1>Sponsors</h1>
+        <div class="row row-centered sponsor">
+<!-- leaving this here as an example -->
+            <div class="col-centered">
+                <a href="https://bobst.com/"
+                   rel="noreferrer"
+                   target="_blank">
+                    <img src="images/logos/bobst.png"
+                         alt="BOBST">
+                </a>
+            </div>
+        <div class="row row-centered sponsor">
+            <h3>Organizers</h3>
+            <!-- NOTE: EPFL requies that their logo be first -->
+            <div class="col-centered">
+                <a href="http://epfl.ch/"
+                   rel="noreferrer"
+                   target="_blank">
+                    <img src="images/logos/epfl.svg"
+                         alt="EPFL">
+                </a>
+            </div>
+<!-- TODO put polyprog logo here -->
+            <div class="col-centered">
+                <a href="http://clic.epfl.ch/"
+                   rel="noreferrer"
+                   target="_blank">
+                    <img src="images/logos/clic.png"
+                         alt="I&amp;C Students Association (CLIC)">
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="section-info section-footer">
+        <h1>Committee</h1>
+        <div class="row row-centered">
+            <div class="col-centered">
+<!-- TODO put everyone -->
+                <a class="staff-link"
+                   target="_blank"
+                   rel="noreferrer"
+                   href="https://www.linkedin.com/in/blagovestakostova">
+                    <div class="staff-container">
+                        <img class="staff-pic"
+                             src="images/staff/betty_kostova.jpg"
+                             alt="Picture of Betty Kostova">
+                        <div class="staff-info">
+                            <span class="staff-firstname">
+                                Betty
+                            </span>
+                            <br>
+                            <span class="staff-lastname">
+                                Kostova
+                            </span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-centered">
+                <a class="staff-link"
+                   target="_blank"
+                   rel="noreferrer"
+                   href="https://www.linkedin.com/in/solalpirelli">
+                    <div class="staff-container">
+                        <img class="staff-pic"
+                             src="images/staff/solal_pirelli.jpg"
+                             alt="Picture of Solal Pirelli">
+                        <div class="staff-info">
+                            <span class="staff-firstname">
+                                Solal
+                            </span>
+                            <br>
+                            <span class="staff-lastname">
+                                Pirelli
+                            </span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-centered">
+                <a class="staff-link"
+                   target="_blank"
+                   rel="noreferrer"
+                   href="https://www.linkedin.com/in/tatiana-nikitina">
+                    <div class="staff-container">
+                        <img class="staff-pic"
+                             src="images/staff/tatiana_nikitina.jpg"
+                             alt="Picture of Tatiana Nikitina">
+                        <div class="staff-info">
+                            <span class="staff-firstname">
+                                Tatiana
+                            </span>
+                            <br>
+                            <span class="staff-lastname">
+                                Nikitina
+                            </span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXP2NuuGZAxORy6-p6je3mSiXjCboOtX8"></script>
+</body>
+</html>
